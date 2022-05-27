@@ -2,7 +2,12 @@
   <footer>
     <!-- FOOTER -->
     <div class="debug container">
-      FOOTER
+      <div class="row">
+        <div class="col debug"></div>
+        <div class="col debug"></div>
+        <div class="col debug"></div>
+        <div class="col debug"></div>
+      </div>
     </div>
 
      <!-- BANNER COPY -->

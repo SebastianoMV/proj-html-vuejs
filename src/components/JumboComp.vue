@@ -1,7 +1,7 @@
 <template>
-  <div class="debug">
+  <div class="jumbotron">
     <div class="container ">
-      <div class="text-jumbo debug d-flex flex-column justify-content-center pt-5">
+      <div class="text-jumbo d-flex flex-column justify-content-center pt-5">
         
           <h1>Drive With Avada</h1>
           <h3>We offer the finest Driving tuition money can buy</h3>
@@ -31,26 +31,31 @@ export default {
 
 <style lang="scss" scoped>
 
-div{
-  height: 400px;
+.jumbotron{
+  background-image: url(../assets/img/homepage-hero-background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 600px;
   position: relative;
   .container{
     height: 100%;
     .text-jumbo{
+      color: white;
       width: 50%;
+      height: 100%;
     }
   }
   .offert-up{
-    position: absolute;
+    position: fixed;
     top: 100px;
     right: 10px;
     div{
       height: 50px;
       width: 50px;
       background-color: white;
-      z-index: 999;
       border-radius: 10px;
       margin: 5px;
+      z-index: 999;
     }
   }
 }
