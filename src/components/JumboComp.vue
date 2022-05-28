@@ -1,11 +1,9 @@
 <template>
   <div class="jumbotron">
     <div class="container ">
-      <div class="text-jumbo d-flex flex-column justify-content-center pt-5">
-        
-          <h1>Drive With Avada</h1>
-          <h3>We offer the finest Driving tuition money can buy</h3>
-        
+      <div class="text-jumbo d-flex flex-column justify-content-center pt-5">    
+          <h1 class="pt-5">Drive With Avada</h1>
+          <h3>We offer the finest Driving tuition money can buy</h3>  
       </div>
       
     </div>

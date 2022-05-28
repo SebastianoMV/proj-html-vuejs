@@ -1,6 +1,8 @@
+@import './var';
+
 .debug{
   background-color: rgba($color: #f97474, $alpha: 0.5);
-  border: 1px solid black;
+  // border: 1px solid black;
   height: 300px;
 }
 .smv-w-50{
@@ -15,4 +17,14 @@
 .background-cover{
   background-position: center;
   background-size: cover;
+}
+
+.box-white-standard{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px 0px #888888;
+}
+
+.border-top-green{
+  border-top: 3px solid $primary-color;
 }

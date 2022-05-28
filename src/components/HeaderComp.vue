@@ -13,6 +13,10 @@
            <li>Home</li>
            <li>About</li>
            <li>Prices</li>
+           <li>Courses <span>new</span></li>
+           <li>locations</li>
+           <li>blog</li>
+           <li><BtnComp btnString="book now"/></li>
           </ul>
         </div>
       </nav>
@@ -21,14 +25,16 @@
 </template>
 
 <script>
+import BtnComp from './BtnComp.vue';
 
 export default {
-  name: 'HeaderComp',
-
+    name: "HeaderComp",
+    components: { BtnComp }
 }
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/style/var';
 header{
   position: fixed;
   z-index: 998;
@@ -51,6 +57,10 @@ header{
       width: 75%;
       list-style: none;
       margin: auto;
+      li{
+        text-transform: uppercase;
+        margin: auto;
+      }
     }
   }
 

@@ -4,12 +4,12 @@
     
     <div class="">
       <div class="container d-flex justify-content-between">
-        <div class="text-behind">
+        <div class="text-behind my-5">
           <h2>Get Behind The Wheel</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt id placeat magnam accusamus architecto necessitatibus at inventore hic illum. Omnis dolores hic odit provident iste nihil nisi eos accusamus unde.</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla nobis qui quo! Ducimus, temporibus maxime. A nostrum minus in, blanditiis itaque eius repellendus quibusdam odit minima perferendis vitae eaque natus.</p>
+          <p class="mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt id placeat magnam accusamus architecto necessitatibus at inventore hic illum. Omnis dolores hic odit provident iste nihil nisi eos accusamus unde.</p>
+          <p class="my-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla nobis qui quo! Ducimus, temporibus maxime. A nostrum minus in, blanditiis itaque eius repellendus quibusdam odit minima perferendis vitae eaque natus.</p>
         </div>
-        <div class="smv-w-50 debug margin-top-less-20">
+        <div class="smv-w-50 margin-top-less-20 box-white-standard">
           first-lesson
         </div>
       </div>
@@ -30,7 +30,7 @@
     <!-- COURSES -->
     <div class="courses background-cover">
       <div class="container d-flex">
-        <div class="courses-news margin-top-less-20">
+        <div class="courses-news margin-top-less-20 box-white-standard">
 
         </div>
         <div class="container-fluid debug">
@@ -43,35 +43,36 @@
       </div>
     </div>
 
-    <!-- % -->
+    <!-- rate -->
     <div class="rate-bg">
       <div class="debug container">
         <div class="row">
-          <div class="col debug"></div>
-          <div class="col debug"></div>
-          <div class="col debug"></div>
+          <div class="col debug box-white-standard border-top-green mx-1"></div>
+          <div class="col debug box-white-standard border-top-green mx-1"></div>
+          <div class="col debug box-white-standard border-top-green mx-1"></div>
         </div>
       </div>
     </div>
 
       <!-- INSTRUCTORS -->
     <div class="">
-      <div class=" container d-flex debug justify-content-between align-items-center">
+      <div class=" container  debug">
         <div class="debug d-flex">
-          <h3>Your Instructors</h3>
+          
           <div class="debug">
+            <h3>Your Instructors</h3>
             sdfg
           </div>
           <div class="debug">
-
+           <BtnComp btnString="more about us"/>
           </div>
         </div>
       </div>
       <div class="debug container">
         <div class="row">
-          <div class="col debug"></div>
-          <div class="col debug"></div>
-          <div class="col debug"></div>
+          <div class="col debug border-top-green mx-1 box-white-standard"></div>
+          <div class="col debug border-top-green mx-1 box-white-standard"></div>
+          <div class="col debug border-top-green mx-1 box-white-standard"></div>
         </div>
       </div>
     </div>
@@ -85,9 +86,11 @@
 
     <!-- BANNER NEWS -->
     <div class="debug banner-news-bg background-cover">
-      <div class=" container d-flex flex-column align-items-center margin-top-less-20">
-        <div class="news-container">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo accusantium quasi aliquam vero consectetur labore, aliquid minima ratione. Eum pariatur soluta nihil animi saepe maxime atque ad eos eius perferendis!
+      <div class=" container d-flex flex-column align-items-center margin-top-less-20 ">
+        <div class="news-container text-center box-white-standard">
+          <h3>Latest News</h3>
+          <div></div>
+          <BtnComp btnString="more from the blog"/>
         </div>
           <img src="../assets/img/latestnews-bottom.png" alt="">
       </div>
@@ -105,12 +108,15 @@
 </template>
 
 <script>
-export default { 
-  name: 'MainComp'
+import BtnComp from './BtnComp.vue';
+export default {
+    name: "MainComp",
+    components: { BtnComp }
 }
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/style/utilities';
 
 main{
   height: 100%;
@@ -165,6 +171,7 @@ main{
       height: 100%;
       background-color: white;
       border-radius: 3px;
+      border-top: 3px solid #7094a9;
     }
     img{
       width: 50%;
