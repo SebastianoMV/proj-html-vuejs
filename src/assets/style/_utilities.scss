@@ -9,4 +9,10 @@
 
 .margin-top-less-20{
   margin-top: -20px;
+  z-index: 10;
+}
+
+.background-cover{
+  background-position: center;
+  background-size: cover;
 }
