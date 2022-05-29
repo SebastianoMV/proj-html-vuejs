@@ -37,7 +37,7 @@ export default {
 }
 
 .single-chart {
-  width: 80%;
+  width: 100%;
   justify-content: center ;
 }
 

@@ -76,15 +76,15 @@
     <div class="rate-bg">
       <div class="container">
         <div class="row">
-          <div class="col debug box-white-standard border-top-green mx-1">
+          <div class="col box-white-standard border-top-green mx-1">
             <RateComp ratePercent="95"/>
             <h5>pass rate</h5>
           </div>
-          <div class="col debug box-white-standard border-top-green mx-1">
+          <div class="col box-white-standard border-top-green mx-1">
             <RateComp ratePercent="100"/>
             <h5>referral rate</h5>
           </div>
-          <div class="col debug box-white-standard border-top-green mx-1">
+          <div class="col box-white-standard border-top-green mx-1">
             <RateComp ratePercent="0"/>
             <h5>accident rate</h5>
           </div>
@@ -275,6 +275,8 @@ main{
       color: #8d959f;
       text-align: center;
       text-transform: uppercase;
+      margin-top: 30px;
+      margin-bottom: 40px;
     }
     
   }
