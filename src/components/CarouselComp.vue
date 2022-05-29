@@ -4,7 +4,7 @@
       <div v-for="(testimonial, index) in testimonialsArr" :key="index">
         <img class="my-3" :src="testimonial.img" alt="">
         <p>{{testimonial.text}}</p>
-        <h4>{{testimonial.name}}</h4>
+        <h4 class="my-4">{{testimonial.name}}</h4>
       </div>
     </VueSlickCarousel>
   </div>

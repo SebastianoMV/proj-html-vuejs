@@ -1,19 +1,20 @@
 <template>
-  <div class="jumbotron">
+  <div class="jumbotron ">
     <div class="container ">
       <div class="text-jumbo d-flex flex-column justify-content-center pt-5">    
           <h1 class="pt-5">Drive With Avada</h1>
           <h3>We offer the finest Driving tuition money can buy</h3>  
       </div>
-      
     </div>
 
     <div class="offert-up">
       <div>
-
+      
+      <p>Demos</p>
       </div>
       <div>
-
+        <span>$ <span>39</span> </span>
+        <p>On Sale</p>
       </div>
     </div>
 
@@ -28,6 +29,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/style/var';
 
 .jumbotron{
   background-image: url(../assets/img/homepage-hero-background.jpg);
@@ -45,7 +47,8 @@ export default {
   }
   .offert-up{
     position: fixed;
-    top: 100px;
+    z-index: 999;
+    top: 110px;
     right: 10px;
     div{
       height: 50px;
@@ -53,7 +56,20 @@ export default {
       background-color: white;
       border-radius: 10px;
       margin: 5px;
-      z-index: 999;
+      span{
+        color: $primary-color;
+        font-size: 10px;
+        text-align:center;
+        span{
+          font-size: 20px;
+          font-weight: 900;
+        }
+      }
+      p{
+        font-size: 12px;
+        text-align: center;
+      }
+      
     }
   }
 }

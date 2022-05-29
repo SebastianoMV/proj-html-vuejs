@@ -50,21 +50,21 @@
               <div class="card-course text-center my-5">
                 <img src="../assets/img/courses-passplus.jpg" alt="courses-passplus">
                 <h4>Pass Plus</h4>
-                <button>ccc</button>
+                <BtnComp2 btnString="learn more" />
               </div>
             </div>
             <div class="col">
               <div class="card-course text-center my-5">
                 <img src="../assets/img/course-intensive.jpg" alt="courses-intensive">
                 <h4>Intensive</h4>
-                <button>ccc</button>
+                <BtnComp2 btnString="learn more" />
               </div>
             </div>
             <div class="col">
               <div class="card-course text-center my-5">
                 <img src="../assets/img/courses-instructor.jpg" alt="courses-instructor">
                 <h4>Instructor</h4>
-                <button>ccc</button>
+                <BtnComp2 btnString="learn more" />
               </div>
             </div>
           </div>
@@ -77,13 +77,16 @@
       <div class="container">
         <div class="row">
           <div class="col debug box-white-standard border-top-green mx-1">
-            <RateComp/>
+            <RateComp ratePercent="95"/>
+            <h5>pass rate</h5>
           </div>
           <div class="col debug box-white-standard border-top-green mx-1">
-            
+            <RateComp ratePercent="100"/>
+            <h5>referral rate</h5>
           </div>
           <div class="col debug box-white-standard border-top-green mx-1">
-            
+            <RateComp ratePercent="0"/>
+            <h5>accident rate</h5>
           </div>
         </div>
       </div>
@@ -193,9 +196,10 @@
 import BtnComp from './BtnComp.vue';
 import RateComp from './RateComp.vue';
 import CarouselComp from './CarouselComp.vue';
+import BtnComp2 from './BtnComp2.vue';
 export default {
     name: "MainComp",
-    components: { BtnComp, RateComp, CarouselComp }
+    components: { BtnComp, RateComp, CarouselComp, BtnComp2 }
 }
 </script>
 
@@ -267,6 +271,11 @@ main{
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: top;
+    h5{
+      color: #8d959f;
+      text-align: center;
+      text-transform: uppercase;
+    }
     
   }
 
@@ -285,8 +294,7 @@ main{
   .testimonials-bg{
     background-image: url(../assets/img/testimonial-background.jpg);
     .container-testimonials{
-      width: 50%;
-      
+      width: 40%; 
     }
   }
 
