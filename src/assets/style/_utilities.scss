@@ -8,10 +8,18 @@
 .smv-w-50{
   width: 50%;
 }
+.smv-w-30{
+  width: 30%;
+}
 
 .margin-top-less-20{
   margin-top: -20px;
-  z-index: 10;
+  z-index: 100;
+}
+
+.margin-bot-less-20{
+  margin-bottom: -20px;
+  z-index: 100;
 }
 
 .background-cover{

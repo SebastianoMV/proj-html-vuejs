@@ -47,7 +47,7 @@ header{
     color: gray;
   }
   nav{
-    background-color: rgba($color: #353637, $alpha: 0.5);
+    background-color: rgba($color: #353637, $alpha: 0.7);
     color: white;
     height: 100px;
     img{
@@ -57,6 +57,12 @@ header{
       width: 75%;
       list-style: none;
       margin: auto;
+      span{
+        background-color: $primary-color;
+        border-radius: 5px;
+        padding: 2px 5px;
+        font-size: 10px;
+      }
       li{
         text-transform: uppercase;
         margin: auto;
