@@ -136,9 +136,11 @@
     </div>
 
     <!-- TESTIMONIALS -->
-    <div class="debug testimonials-bg background-cover p-5">
-      <div class=" container text-center">
-        TESTIMONIALS
+    <div class="testimonials-bg background-cover p-5">
+      <div class=" container-testimonials m-auto text-center py-4">
+        <h3 class="my-3">Testimonials</h3>
+        <p>Here's what our happy drivers had to say sbout our service</p>
+        <CarouselComp/>
       </div>
     </div>
 
@@ -190,9 +192,10 @@
 <script>
 import BtnComp from './BtnComp.vue';
 import RateComp from './RateComp.vue';
+import CarouselComp from './CarouselComp.vue';
 export default {
     name: "MainComp",
-    components: { BtnComp, RateComp }
+    components: { BtnComp, RateComp, CarouselComp }
 }
 </script>
 
@@ -281,7 +284,10 @@ main{
   // testimonials
   .testimonials-bg{
     background-image: url(../assets/img/testimonial-background.jpg);
-    height: 400px; //rimuovere
+    .container-testimonials{
+      width: 50%;
+      
+    }
   }
 
   // banner news
