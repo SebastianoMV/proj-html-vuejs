@@ -109,10 +109,14 @@
       <div class="container margin-bot-less-20">
         <div class="row ">
           <div class="col border-top-green mx-1 box-white-standard">
-            <div class=" text-center p-5">
+            <div class="text-center p-5">
               <img src="../assets/img/instructor-mikehart.jpg" alt="blog post">
               <h4> Mike Hart</h4>
-              <div> f t i</div>
+              <div> 
+                <i class="fa-brands fa-facebook-f mx-2"></i>
+                <i class="fa-brands fa-twitter mx-2"></i>
+                <i class="fa-brands fa-instagram mx-2"></i>
+              </div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta.</p>
             </div>
               
@@ -121,7 +125,11 @@
             <div class=" text-center p-5">
               <img src="../assets/img/instructor-johnsmith.jpg" alt="blog post">
               <h4> John Smith</h4>
-              <div> f t i</div>
+              <div> 
+                <i class="fa-brands fa-facebook-f mx-2"></i>
+                <i class="fa-brands fa-twitter mx-2"></i>
+                <i class="fa-brands fa-instagram mx-2"></i>
+              </div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta.</p>
 
             </div>
@@ -130,7 +138,11 @@
             <div class=" text-center p-5">
               <img src="../assets/img/instructor-angelahart.jpg" alt="blog post">
               <h4>Angela Hart</h4>
-              <div> f t i</div>
+              <div > 
+                <i class="fa-brands fa-facebook-f mx-2"></i>
+                <i class="fa-brands fa-twitter mx-2"></i>
+                <i class="fa-brands fa-instagram mx-2"></i>
+              </div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta.</p>
             </div>
           </div>
@@ -186,7 +198,7 @@
         <h3 class="py-4">Sing up to our Newsletters</h3>
         <input type="text">
         <BtnComp btnString="subscribe" class="py-3"/>
-        <p>(we do not share your data with anybody, and </p>
+        <p>(we do not share your data with anybody, and only use it for its intended porpose)</p>
       </div>
     </div>
   </main>
@@ -279,15 +291,24 @@ main{
       margin-bottom: 40px;
     }
     
+    
   }
 
   //instructors
   .instructors{
+    color: #8d959f;
     .text-instructors{
     width: 80%;
+    color: black;
+    }
+    h4{
+      color: black;
     }
     img{
       width: 100%;
+    }
+    .col:hover{
+      transform: scale(1, 1.05);
     }
   }
   
@@ -308,9 +329,11 @@ main{
       width: 100%;
       height: 100%;
       background-color: white;
-      border-radius: 3px;
-      border-top: 3px solid #7094a9;
-      padding: 20px;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-top: 4px solid #7094a9;
       p{
         color: gray;
       }

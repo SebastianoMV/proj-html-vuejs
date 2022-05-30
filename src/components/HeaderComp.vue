@@ -10,12 +10,9 @@
         <div class="container d-flex py-4">
           <img src="../assets/img/avada-drivers-logo-2x-400x77.png" alt="avada drivers logo">
           <ul class="container d-flex justify-content-between">
-           <li>Home</li>
-           <li>About</li>
-           <li>Prices</li>
-           <li>Courses <span>new</span></li>
-           <li>locations</li>
-           <li>blog</li>
+           <li v-for="(item, index) in headerMenu" :key="index">
+            <div :class="{'activenav': item.active == true}" @click="activeClick(index)">{{item.name}} <span v-if="item.new != ''">{{item.new}}</span></div>
+           </li>
            <li><BtnComp btnString="book now"/></li>
           </ul>
         </div>
@@ -29,7 +26,56 @@ import BtnComp from './BtnComp.vue';
 
 export default {
     name: "HeaderComp",
-    components: { BtnComp }
+    components: { BtnComp },
+    data() {
+      return {
+        active: true,
+        headerMenu:[
+        {
+          name:'home',
+          href: '',
+          active: true,
+          new: '',
+        },
+        {
+          name:'about',
+          href: '',
+          active: false,
+          new: '',
+        },
+        {
+          name:'prices',
+          href: '',
+          active: false,
+          new: 'new',
+        },
+        {
+          name:'courses',
+          href: '#',
+          active: false,
+          new: '',
+        },
+        {
+          name:'locations',
+          href: '#',
+          active: false,
+          new: '',
+        },
+        {
+          name:'blog',
+          href: '#',
+          active: false,
+          new: '',
+        },
+        
+      ]
+      }
+    },
+    methods: {
+      activeClick(n){
+        this.headerMenu[n].active = !this.headerMenu[n].active;
+      }
+    },
 }
 </script>
 
@@ -66,6 +112,10 @@ header{
       li{
         text-transform: uppercase;
         margin: auto;
+        a{
+          text-decoration: none;
+          color: white;
+        }
       }
     }
   }
