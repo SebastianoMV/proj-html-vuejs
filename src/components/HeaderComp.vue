@@ -47,13 +47,13 @@ export default {
           name:'prices',
           href: '',
           active: false,
-          new: 'new',
+          new: '',
         },
         {
           name:'courses',
           href: '#',
           active: false,
-          new: '',
+          new: 'new',
         },
         {
           name:'locations',

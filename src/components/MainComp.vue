@@ -197,7 +197,7 @@
       <div class="container d-flex flex-column align-items-center py-4" >
         <h3 class="py-4">Sing up to our Newsletters</h3>
         <input type="text">
-        <BtnComp btnString="subscribe" class="py-3"/>
+        <BtnComp btnString="subscribe" class="py-3 width-btn"/>
         <p>(we do not share your data with anybody, and only use it for its intended porpose)</p>
       </div>
     </div>
@@ -352,6 +352,14 @@ main{
   // newsletter
   .newsletter-bg{
     background-image: url(../assets/img/newsletter_background.jpg);
+    .container{
+      width: 30%;
+      margin: auto;
+      input{
+        width: 100%;
+      }
+    
+    }
   }
 }
 

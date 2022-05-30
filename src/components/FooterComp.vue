@@ -11,10 +11,10 @@
           <div class="col">
             <h4>Contact details</h4>
             <ul>
-              <li>12345 North Main Street, New York, NY 55555</li>
-              <li>1.800.555.6789</li>
-              <li>info@your-domain.com</li>
-              <li>Theme-Fusion.com</li>
+              <li><i class="fa-solid fa-house-chimney"></i> 12345 North Main Street, New York, NY 55555</li>
+              <li><i class="fa-solid fa-phone-flip"></i> 1.800.555.6789</li>
+              <li><i class="fa-regular fa-envelope"></i> info@your-domain.com</li>
+              <li><i class="fa-solid fa-link"></i> Theme-Fusion.com</li>
             </ul>
           </div>
           <div class="col courses-li">
@@ -76,10 +76,23 @@ export default {
     width: 90%;
     margin-bottom: 20px;
   }
+  ul{
+    padding-left: 0;
+    list-style: none;
+    li{
+      padding-top: 5px;
+    }
+  }
   .courses-li{
       li{
         color: $primary-color;
-        font-size: 15px;
+        font-size: 15px;       
+        &::before{
+          content: "\f0a9";
+          font-family: FontAwesome;
+          padding-right: 5px;
+          padding-left: 0;
+        }
       }
     }
 
