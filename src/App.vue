@@ -22,6 +22,7 @@ export default {
 
 <style lang="scss">
 @import './assets/style/general';
-@import './assets/style/utilities'
+@import './assets/style/utilities';
+
 
 </style>

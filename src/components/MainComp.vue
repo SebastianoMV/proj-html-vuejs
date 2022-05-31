@@ -72,7 +72,7 @@
       </div>
     </div>
 
-    <!-- rate -->
+    <!-- RATE -->
     <div class="rate-bg">
       <div class="container">
         <div class="row">
@@ -107,46 +107,9 @@
         </div>
       </div>
       <div class="container margin-bot-less-20">
-        <div class="row ">
-          <div class="col border-top-green mx-1 box-white-standard">
-            <div class="text-center p-5">
-              <img src="../assets/img/instructor-mikehart.jpg" alt="blog post">
-              <h4> Mike Hart</h4>
-              <div> 
-                <i class="fa-brands fa-facebook-f mx-2"></i>
-                <i class="fa-brands fa-twitter mx-2"></i>
-                <i class="fa-brands fa-instagram mx-2"></i>
-              </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta.</p>
-            </div>
-              
-          </div>
-          <div class="col border-top-green mx-1 box-white-standard text-center">
-            <div class=" text-center p-5">
-              <img src="../assets/img/instructor-johnsmith.jpg" alt="blog post">
-              <h4> John Smith</h4>
-              <div> 
-                <i class="fa-brands fa-facebook-f mx-2"></i>
-                <i class="fa-brands fa-twitter mx-2"></i>
-                <i class="fa-brands fa-instagram mx-2"></i>
-              </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta.</p>
+        
+          <InstructorsCardComp />
 
-            </div>
-          </div>
-          <div class="col border-top-green mx-1 box-white-standard text-center">
-            <div class=" text-center p-5">
-              <img src="../assets/img/instructor-angelahart.jpg" alt="blog post">
-              <h4>Angela Hart</h4>
-              <div > 
-                <i class="fa-brands fa-facebook-f mx-2"></i>
-                <i class="fa-brands fa-twitter mx-2"></i>
-                <i class="fa-brands fa-instagram mx-2"></i>
-              </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta.</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -209,9 +172,10 @@ import BtnComp from './BtnComp.vue';
 import RateComp from './RateComp.vue';
 import CarouselComp from './CarouselComp.vue';
 import BtnComp2 from './BtnComp2.vue';
+import InstructorsCardComp from './InstructorsCardComp.vue';
 export default {
     name: "MainComp",
-    components: { BtnComp, RateComp, CarouselComp, BtnComp2 }
+    components: { BtnComp, RateComp, CarouselComp, BtnComp2, InstructorsCardComp }
 }
 </script>
 

@@ -93,6 +93,8 @@ header{
     color: gray;
   }
   nav{
+    // position: sticky;
+    // top: 0px;
     background-color: rgba($color: #353637, $alpha: 0.7);
     color: white;
     height: 100px;
