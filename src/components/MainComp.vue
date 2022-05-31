@@ -9,13 +9,19 @@
           <p class="mt-5 top-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt id placeat magnam accusamus architecto necessitatibus at inventore hic illum.</p>
           <p class="my-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla nobis qui quo! Ducimus, temporibus maxime. A nostrum minus in, blanditiis itaque eius repellendus quibusdam odit minima perferendis vitae eaque natus.</p>
         </div>
-        <div class="smv-w-50 margin-top-less-20 box-white-standard d-flex flex-column justify-content-between text-center p-5">
+        <div v-if="form"  class="smv-w-50 margin-top-less-20 box-white-standard d-flex flex-column justify-content-between text-center p-5">
           <h3>First Lesson Free!</h3>
           <p>When you make a block booking with us your first lesson is included for free.</p>
           <input type="text" placeholder="Your Name*">
           <input type="email" placeholder="Email*">
           <input type="text" placeholder="Telephone">
           <input type="text" placeholder="Location">
+          <div @click="showForm()">
+            <BtnComp btnString="request a callback"/>
+          </div>
+          
+        </div>
+        <div @click="showForm()" v-else class="m-auto"> 
           <BtnComp btnString="request a callback"/>
         </div>
       </div>
@@ -175,7 +181,18 @@ import BtnComp2 from './BtnComp2.vue';
 import InstructorsCardComp from './InstructorsCardComp.vue';
 export default {
     name: "MainComp",
-    components: { BtnComp, RateComp, CarouselComp, BtnComp2, InstructorsCardComp }
+    components: { BtnComp, RateComp, CarouselComp, BtnComp2, InstructorsCardComp },
+    data() {
+      return {
+        form: false,
+      }
+    },
+    methods: {
+      showForm(){
+        this.form = !this.form;
+        console.log(this.form);
+      }
+    },
 }
 </script>
 

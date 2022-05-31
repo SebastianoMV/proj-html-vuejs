@@ -22,7 +22,7 @@
 export default {
   name: 'RateComp',
   props:{
-    ratePercent: Number,
+    ratePercent: String,
   }
 
 }
