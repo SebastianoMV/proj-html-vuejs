@@ -8,11 +8,11 @@
     </div>
 
     <div class="offert-up">
-      <div>
-      
+      <div class="d-flex flex-column justify-content-center align-items-center">
+      <img src="../assets/img/download.png" alt="">
       <p>Demos</p>
       </div>
-      <div>
+      <div class="d-flex flex-column justify-content-center align-items-center">
         <span>$ <span>39</span> </span>
         <p>On Sale</p>
       </div>
@@ -43,6 +43,9 @@ export default {
       color: white;
       width: 50%;
       height: 100%;
+      h1{
+        font-size: 3rem;
+      }
     }
   }
   .offert-up{
@@ -56,10 +59,13 @@ export default {
       background-color: white;
       border-radius: 10px;
       margin: 5px;
+      img{
+        width: 20px;
+      }
       span{
         color: $primary-color;
         font-size: 10px;
-        text-align:center;
+        
         span{
           font-size: 20px;
           font-weight: 900;
@@ -67,7 +73,7 @@ export default {
       }
       p{
         font-size: 12px;
-        text-align: center;
+        margin: auto;
       }
       
     }

@@ -3,7 +3,7 @@
       <div class="banner-top-nav">
         <div class="container d-flex justify-content-between py-2">
           <span>We have a 95% Successful Pass Rate!</span>
-          <span>Give us a call</span>
+          <span><i class="fa-solid fa-phone-flip"></i> Give us a call to book your tuition! 1-880-555-555</span>
         </div>
       </div>
       <nav>

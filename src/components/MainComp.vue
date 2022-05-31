@@ -6,7 +6,7 @@
       <div class="container d-flex justify-content-between">
         <div class="text-behind my-5">
           <h2>Get Behind The Wheel</h2>
-          <p class="mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt id placeat magnam accusamus architecto necessitatibus at inventore hic illum. Omnis dolores hic odit provident iste nihil nisi eos accusamus unde.</p>
+          <p class="mt-5 top-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt id placeat magnam accusamus architecto necessitatibus at inventore hic illum.</p>
           <p class="my-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla nobis qui quo! Ducimus, temporibus maxime. A nostrum minus in, blanditiis itaque eius repellendus quibusdam odit minima perferendis vitae eaque natus.</p>
         </div>
         <div class="smv-w-50 margin-top-less-20 box-white-standard d-flex flex-column justify-content-between text-center p-5">
@@ -26,10 +26,10 @@
       <div class="container d-flex justify-content-between align-items-center py-5">
         <div>
           <h2>Start Learning to Drive Today</h2>
-          <p>Give Us a call to schedule your first drive lesson</p>
+          <h6>Give Us a call to schedule your first drive lesson</h6>
         </div>
         
-        <p>1-880-555-555</p>
+        <p><i class="fa-solid fa-phone-flip"></i> 1-880-555-555</p>
       </div>
     </div>
 
@@ -127,9 +127,9 @@
       <div class=" container d-flex">
         <div class=" d-flex flex-column align-items-center margin-top-less-20">
           <div class="news-container text-center box-white-standard ">
-            <h3>Latest News</h3>
+            <h3 class="my-5">Latest News</h3>
             <div class="container-fluid">
-              <div class="row">
+              <div class="row my-5">
                 <div class="col">
                   <div>
                     <img src="../assets/img/blog-choosecar-700x441.jpg" alt="blog choosecar">
@@ -194,6 +194,12 @@ main{
     h3{
       color: $primary-color;
     }
+    .top-text{
+      font-size: 20px;
+    }
+    p{
+      color: #8d959f;
+    }
     input{
       padding: 12px;
       margin-bottom: 25px;
@@ -210,6 +216,9 @@ main{
     background-position: center;
     background-size: cover;
     color: white;
+    p{
+      font-size: 25px;
+    }
   }
 
   //COURSES
@@ -233,15 +242,13 @@ main{
     }
     .courses-cards{
       width: 60%;
-
       img{
         width: 90%;
       }
     }
-
   }
 
-  //rate
+  //RATE
   .rate-bg{
     background-image: url(../assets/img/output-onlinepngtools.png);
     background-size: contain;
@@ -258,7 +265,7 @@ main{
     
   }
 
-  //instructors
+  //INSTRUCTORS
   .instructors{
     color: #8d959f;
     .text-instructors{
@@ -277,7 +284,7 @@ main{
   }
   
 
-  // testimonials
+  // TESTIMONIALS
   .testimonials-bg{
     background-image: url(../assets/img/testimonial-background.jpg);
     .container-testimonials{
