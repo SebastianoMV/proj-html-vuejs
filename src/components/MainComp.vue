@@ -12,7 +12,10 @@
         <div v-if="form"  class="smv-w-50 margin-top-less-20 box-white-standard d-flex flex-column justify-content-between text-center p-5">
           <h3>First Lesson Free!</h3>
           <p>When you make a block booking with us your first lesson is included for free.</p>
-          <input type="text" placeholder="Your Name*">
+          <div class="position-relative input-div">
+            <input type="text" placeholder="Your Name*">
+            <img src="../assets/img/image.png" alt="">
+          </div> 
           <input type="email" placeholder="Email*">
           <input type="text" placeholder="Telephone">
           <input type="text" placeholder="Location">
@@ -166,7 +169,7 @@
       <div class="container d-flex flex-column align-items-center py-4" >
         <h3 class="py-4">Sing up to our Newsletters</h3>
         <input type="text">
-        <BtnComp btnString="subscribe" class="py-3 width-btn"/>
+        <BtnComp btnString="subscribe" class="py-3"/>
         <p>(we do not share your data with anybody, and only use it for its intended porpose)</p>
       </div>
     </div>
@@ -216,6 +219,18 @@ main{
     }
     p{
       color: #8d959f;
+    }
+    .input-div{
+      input{
+        width: 100%;
+      }
+      min-width: 100%;
+    }
+    img{
+      width: 15px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
     }
     input{
       padding: 12px;
@@ -345,6 +360,10 @@ main{
       margin: auto;
       input{
         width: 100%;
+      }
+      p{
+        color: #8d959f;
+        font-size: 12px;
       }
     
     }
